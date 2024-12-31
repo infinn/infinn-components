@@ -29,7 +29,7 @@
 
 |  #   | Proyecto         | Descripción                       | Código 
 | --- | --- | ------------------------------------------------------------------------ | ---
-| 1   | **Animated Preloader** | Learn how to create an animated preloader using HTML, CSS, and JavaScript. | [![Github Icon](./image/github.png)]()
+| 1   | **Animated Preloader** | Learn how to create an animated preloader using HTML, CSS, and JavaScript. | [![Github Icon](./image/github.png)](https://github.com/infinn/infinn-components/tree/main/001-preloader)
 
 ## 🛠️ Stack
 
