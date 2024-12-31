@@ -29,7 +29,8 @@
 
 |  #   | Proyecto         | Descripción                       | Código 
 | --- | --- | ------------------------------------------------------------------------ | ---
-| 1   | **Animated Preloader** | Learn how to create an animated preloader using HTML, CSS, and JavaScript. | [![Github Icon](./image/github.png)](https://github.com/infinn/infinn-components/tree/main/001-preloader)
+| 1 | **Animated Preloader** | Learn how to create an animated preloader using HTML, CSS, and JavaScript. | [![Github Icon](./image/github.png)](https://github.com/infinn/infinn-components/tree/main/001-preloader)
+| 2 | **Animated Preloader** | Learn how to split text into individual letters and apply transition effects | [![Github Icon](./image/github.png)](https://github.com/infinn/infinn-components/tree/main/002-link-animation)
 
 ## 🛠️ Stack
 
