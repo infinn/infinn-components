@@ -1,0 +1,72 @@
+---
+const { href, text, blank = false } = Astro.props;
+
+const delay = 0.01;
+---
+
+<a href={href} class="link" target={ blank ? "_blank" : "_self" }>
+    <div class="text-wrapper">
+        { text.split("").map((letter, i) => (
+            <span 
+                style={`transition-delay: ${delay * i}s;`} 
+                class="letter up">
+                {letter === " " ? "\u00A0" : letter}
+            </span>
+        ))}
+    </div>
+
+    <div class="text-wrapper overlay">
+        { text.split("").map((letter, i) => (
+            <span 
+                style={`transition-delay: ${delay * i}s;`} 
+                class="letter down">
+                {letter === " " ? "\u00A0" : letter}
+            </span>
+        ))}
+    </div>
+</a>
+
+<style>
+    .link {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        white-space: nowrap;
+        width: max-content;
+        height: auto;
+    }
+
+    .text-wrapper {
+        width: max-content;
+    }
+
+    .text-wrapper.overlay {
+        position: absolute;
+        inset: 0;
+        color: #2563eb;
+    }
+
+    .letter {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        height: max-content;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .letter.down {
+        transform: translateY(100%);
+    }
+
+    .letter.up {
+        transform: translateY(0);
+    }
+
+    .link:hover .letter.down {
+        transform: translateY(0);
+    }
+
+    .link:hover .letter.up {
+        transform: translateY(-100%);
+    }
+</style>
